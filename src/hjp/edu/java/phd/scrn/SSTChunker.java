@@ -57,7 +57,6 @@ public class SSTChunker {
 				str = str + " " + tok;
 			}
 		}
-		str = str + "\t";
 
 		return str;
 	}
@@ -77,10 +76,18 @@ public class SSTChunker {
 	public static void main(String[] args) throws IOException {
 		long start = System.currentTimeMillis();
 
-		String inDev = "/Users/hjp/Downloads/SST/devs.txt";
-		String outDev = "/Users/hjp/Downloads/SST/devo.txt";
+		String tar_valid = "/Users/hjp/MacBook/Workspace/Workshop/Corpus/ssc/tar_valid.txt";
+		String valid = "/Users/hjp/MacBook/Workspace/Workshop/Corpus/ssc/valid.txt";
+		
+		String tar_train = "/Users/hjp/MacBook/Workspace/Workshop/Corpus/ssc/tar_train.txt";
+		String train = "/Users/hjp/MacBook/Workspace/Workshop/Corpus/ssc/train.txt";
+		
+		String tar_test = "/Users/hjp/MacBook/Workspace/Workshop/Corpus/ssc/tar_test.txt";
+		String test = "/Users/hjp/MacBook/Workspace/Workshop/Corpus/ssc/test.txt";
 
-		Chunker(inDev, outDev);
+		Chunker(tar_valid, valid);
+		Chunker(tar_train, train);
+		Chunker(tar_test, test);
 
 		long end = System.currentTimeMillis();
 		System.out.println("It costs " + (end - start) / 1000 + " seconds!");
