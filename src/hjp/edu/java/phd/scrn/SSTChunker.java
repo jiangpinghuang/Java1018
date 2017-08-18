@@ -78,10 +78,10 @@ public class SSTChunker {
 
 		String tar_valid = "/Users/hjp/MacBook/Workspace/Workshop/Corpus/ssc/tar_valid.txt";
 		String valid = "/Users/hjp/MacBook/Workspace/Workshop/Corpus/ssc/valid.txt";
-		
+
 		String tar_train = "/Users/hjp/MacBook/Workspace/Workshop/Corpus/ssc/tar_train.txt";
 		String train = "/Users/hjp/MacBook/Workspace/Workshop/Corpus/ssc/train.txt";
-		
+
 		String tar_test = "/Users/hjp/MacBook/Workspace/Workshop/Corpus/ssc/tar_test.txt";
 		String test = "/Users/hjp/MacBook/Workspace/Workshop/Corpus/ssc/test.txt";
 
