@@ -16,10 +16,10 @@ import org.apache.pdfbox.pdmodel.PDDocumentInformation;
 
 public class ModifyPDFTitle {
 
-	public static String confOrJour = "(conf/jour)";
+	public static String confOrJour = "(INTERSPEECH2017)";
 
 	public static void main(String[] args) {
-		String pdfDir = "/your/pdf/dir/";
+		String pdfDir = "/Users/hjp/Downloads/it/";
 		listFile(pdfDir);
 
 	}
@@ -36,7 +36,7 @@ public class ModifyPDFTitle {
 				if (files[i].isDirectory()) {
 					listFile(files[i].getAbsolutePath());
 				} else {
-					if (files[i].getAbsolutePath().endsWith(".pdf") && !files[i].isHidden())
+					if ((files[i].getAbsolutePath().endsWith(".pdf") || files[i].getAbsolutePath().endsWith(".PDF")) && !files[i].isHidden())
 						modifyPDFName(files[i].getAbsolutePath());
 				}
 			}
